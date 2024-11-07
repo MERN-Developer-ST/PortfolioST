@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>MERN Stack Developer</p>
+            <p>Prompt Engineer</p>
+            <h1>Hi, I'm <span>Subrat Tripathi</span><br>From India</h1>
+        </div>
+    </div>
+</div>
+<!-- -----------about---------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Third-year B.Tech student in Computer Science Engineering with a specialization in (AI&ML) from GNIOT, Greater Noida. Proficient in Full Stack Development (MERN stack), programming languages (Python, JavaScript, C, Java, SQL), and Prompt Engineering. Strong foundation in AI/ML projects, data structures, and algorithms. Proven leadership through school roles (Discipline Secretary, House Captain, Head Boy) and strategic thinking as a chess champion.
+                    Currently working as the Team Lead for (AI-ML) in Google Developer Group on campus (GDG on campus), I have strong communication skills, both in written and verbal forms, and have experience in anchoring events, which has enhanced my ability to engage with diverse audiences. This allows me to convey ideas clearly and collaborate effectively in any setting. Actively seeking internship opportunities to apply technical skills and drive innovation in real-world solutions.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Web Developement</span><br>MERN Stack</li>
+                        <li><span>Prompt Engineering</span><br>Prompting & AI Tools</li>
+                        <li><span>Leadership & Communication</span><br>Leading Roles & Anchoring</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                    
+                        <li><span>2024 - Current</span><br>Team lead(AI-ML) at Google Developer Group on Campus (GDG on Campus).</li>
+                        <li><span>2024 - 2024</span><br>Project:- Food Delivery Cost Analysis.</li>
+                        <li><span>2024 - 2024</span><br>Internship at CodSoft.</li>
+                        <li><span>2021 - 2021</span><br>Usefulness of Remote Sensing and GIS for Enivronmental Studies Training by IIRS Dehradun(ISRO).</li>
+                        <li><span>2024 - 2024</span><br>Generative AI Study Jams Event</li>
+                        <li><span>2020 - Current</span><br>Anchoring & Leading in Events</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2026</span><br>B.Tech CSE(AI&ML)</li>
+                        <li><span>2022</span><br>Senior Secondary Education.</li>
+                        <li><span>2020</span><br>Secondary Education.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------services---------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>Web Developement</h2>
+                <p>Merging creativity with technology, crafting solutions that bring ideas to life and connect people across the digital landscape.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fas fa-crop-alt"></i>
+                <h2>Prompt Engineering</h2>
+                <p>Transforming complex ideas into precise instructions, unlocking the true potential of AI through clarity, creativity, and intention.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fab fa-app-store"></i>
+                <h2>Training For Personality Developement</h2>
+                <p>Emphasizing on the journey of self-discovery and growth, where confidence, resilience, and emotional intelligence shape the foundation for success and fulfillment.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ----------portfolio------------ -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Google Developer Group <br>(AI-ML Lead)</h3>
+                    <p>Selected as the Lead of AI/ML for GDG on Campus, where I spearheaded AI initiatives, organized workshops, and led collaborative projects. Played a key role in fostering a tech-driven community and nurturing talent in AI/ML.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>UP International Trade Show(UPITS)</h3>
+                    <p>Explored the prestigious platform that brings together global and national business leaders, government officials, and industry experts. It showcases a wide array of products, technologies, and innovations across various sectors, providing a unique opportunity for businesses to network, collaborate, and explore new markets.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Anchoring in Events</h3>
+                    <p>Served as an anchor and lead organizer for various college programs, ensuring smooth execution and engaging audiences with impactful presentations. Demonstrated strong leadership and communication skills in managing events and collaborating with teams.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!-- ----------contact------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa fa-envelope" aria-hidden="true"></i>subrattripathi27@gmail.com</p>
+                <p><i class="fa fa-phone-square" aria-hidden="true"></i>+917800219227</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/subrat-tripathi-a17112254?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                    <a href="https://www.instagram.com/subrat_tripathi2020?utm_source=qr&igsh=eWRkd3RuNm1ydWd3"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                    <a href="https://www.facebook.com/share/dGPGQvDkiqtpFzqV/?mibextid=qi2Omg"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+                    <a href="https://x.com/subrat_2020?t=NtlI6lKljFT8w9mWmMbg2A&s=09"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                    <a href="https://github.com/MERN-Developer-ST"><i class="fab fa-github" aria-hidden="true"></i></a>
+                </div>
+                <a href="images/my-cv (2) (1).pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © 2022 <i class="fas fa-heart"></i> <a href="https://www.linkedin.com/in/subrat-tripathi-a17112254">Subrat Tripathi</a> <i class="fas fa-heart"></i> All Rights Reserved.</p>
+    </div>
+</div>
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyE1JqzFztEhH-PLkdU_XpTePxr95dDzvb63aTppR6vf1CiuC-iZmzOnZIsWWDxxwlfzw/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
